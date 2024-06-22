@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "userinfo",
+        "actionName": "Suas informações",
+        "icons": "fa-solid fa-user"
+    },
+    {
+        "id": 2,
+        "name": "uploadfilm",
+        "actionName": "Adicionar Filme",
+        "icons": "fa-solid fa-clapperboard"
+    },
+    {
+        "id": 3,
+        "name": "uploadserie",
+        "actionName": "Adicionar Serie",
+        "icons": "fa-solid fa-clapperboard"
+    },
+    {
+        "id": 4,
+        "name": "editfilme",
+        "actionName": "Editar Filme",
+        "icons": "fa-solid fa-pen-to-square"
+    },
+    {
+        "id": 5,
+        "name": "editserie",
+        "actionName": "Editar Série",
+        "icons": "fa-solid fa-pen-to-square"
+    },
+    {
+        "id": 6,
+        "name": "contatos",
+        "actionName": "Contatos",
+        "icons": "fa-solid fa-envelope"
+    },
+    {
+        "id": 7,
+        "name": "desconectar",
+        "actionName": "Desconectar da conta",
+        "icons": "fa-solid fa-right-from-bracket"
+    }
+]

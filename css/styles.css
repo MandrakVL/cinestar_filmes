@@ -1,0 +1,487 @@
+/* Estilos Gerais */
+
+:root {
+    /* Página principal */
+    --corPrincipal: #18181d;
+    --corSegundaria: #437bff;
+    --corBranca: #fff;
+    --corEscura: #090909e6;
+    --corCinza: #19191d;
+    --corFontClara: #3d3d45;
+    --sucesso: #00ff80;
+    /* Painel Administrador */
+    --corLeftPainel: #342E86;
+    --corRightPainel: #fff;
+    --corFontClaraRoxa: #5B50EC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paddin Geral */
+
+.home-filmes,
+.page-filmes,
+.page-contato,
+.page-login,
+.page-series,
+.page-media {
+    padding: 3rem 0;
+}
+
+.errorMsg {
+    color: var(--corSegundaria);
+    margin: 15px 0;
+    display: block;
+    transition: 0.4s;
+}
+
+.sucesso {
+    color: var(--sucesso);
+    margin: 15px 0;
+    display: block;
+}
+
+.btnViewsCorAzul {
+    background-color: var(--corFontClaraRoxa);
+}
+
+.btnViewsCorVisto {
+    background-color: var(--sucesso);
+}
+
+.btnViews {
+    width: 20%;
+    height: 35px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnColor {
+    background-color: var(--corLeftPainel);
+    border: 1px solid var(--corLeftPainel);
+}
+
+.btnColor:hover {
+    background-color: var(--corFontClaraRoxa);
+    border: 1px solid var(--corFontClaraRoxa);
+}
+
+.corFontRoxo {
+    color: var(--corFontClaraRoxa);
+    font-size: 16px;
+}
+
+.link-painel-icons {
+    margin-left: 6px;
+}
+
+#spanErro {
+    color: var(--corSegundaria);
+}
+
+/* h1 painel ( geral ) */
+.painel-title h1 {
+    color: var(--corLeftPainel);
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+/* Estilização Geral (FIM) */
+
+/* Header (Cabeçalho) */
+
+header {
+    height: 90px;
+    background-color: var(--corPrincipal);
+}
+
+.navbar-hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.nav-hd-smartphone {
+    display: none;
+}
+
+.nav-hd-smartphone-icon {
+    display: none;
+}
+
+.dsp-none {
+    display: none;
+}
+
+.dsp-block {
+    display: block;
+}
+
+.corTitleHeader {
+    color: var(--corFontClaraRoxa);
+}
+
+.fontSizeTamanho {
+    font-size: 30px;
+}
+
+.nav-hd-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    list-style: none;
+}
+
+.icon-spacing {
+    margin: 0 5px;
+}
+
+
+.nav-link {
+    color: var(--corBranca);
+    padding: 0.5rem;
+}
+
+.link-login {
+    color: var(--corBranca);
+    background-color: var(--corFontClaraRoxa);
+    padding: 8px 26px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.link-login:hover {
+    color: var(--corFontClaraRoxa);
+    background-color: var(--corBranca);
+}
+
+.nav-link:hover {
+    color: var(--corFontClaraRoxa);
+}
+
+.nav-title-hd a, .nav-title-hd h1 {
+    color: var(--corBranca);
+    text-decoration: none;
+}
+
+/* Cards Geral */
+
+.home-cards, .page-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 3rem 0;
+    gap: 20px;
+    list-style: none;
+}
+
+.home-card-item, .page-card-item {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.card-film-header img, .card-serie-header img {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Erro 404 */
+
+.error-404 {
+    padding: 3rem 0;
+}
+
+.error-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Media - (Sobre o filme) */
+
+.page-media > .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.page-media-foto-filme, .page-media-foto-serie  {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-media-content-filme, .page-media-content-serie {
+    width: 80%;
+    padding: 0 2rem;
+}
+
+.foto-filme img, .foto-serie img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.trailer-filme iframe, .trailer-serie iframe{
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+}
+
+/* Painel ADM */
+
+.page-painel-adm {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+
+.page-painel-left {
+    width: 25%;
+    background: linear-gradient(40deg,var(--corLeftPainel), var(--corFontClaraRoxa));
+    padding: 1.5rem;
+}
+
+.action-item-link {
+    text-decoration: none;
+    color: var(--corBranca);
+}
+
+/* Right Direita */
+
+.page-painel-right-menu {
+    width: 75%;
+    overflow-y: scroll;
+    background-color: var(--corRightPainel);
+}
+
+.container-padding {
+    padding: 2rem;
+    color: var(--corEscura);
+}
+
+.painel-actions-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+}
+
+.actions-item {
+    background-color: var(--corCinza);
+    border-radius: 4px;
+    border-bottom: 1px solid var(--corFontClara);
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.actions-item a {
+    color: var(--corBranca);
+    text-decoration: none;
+}
+
+.action-title h2 {
+    color: var(--corBranca);
+    font-size: 20px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+}
+
+
+/* Userinfo Painel */
+
+.userinfo-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--corFontClara);
+}
+
+/* Desconectar da conta Painel */
+
+.buttons-func {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* Contato painel */
+
+.painel-contatos-users {
+    padding: 0;
+}
+
+.painel-contatos-users .page-card-item-contato, .card-item-header-contato, .card-item-body-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-card-item-contato {
+    border: 1px solid var(--corFontClara);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+
+/* Footer */
+
+footer {
+    background: linear-gradient(-40deg,var(--corFontClaraRoxa), var(--corLeftPainel));
+    padding: 3rem;
+}
+
+.footer-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copy-txt {
+    color: var(--corBranca);
+}
+
+.redes-sociais-group {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.rede-social-link i {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Responsivo */
+
+/* Smartphone */
+@media (max-width: 675px) {
+    header {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .navbar-hd {
+        display: block;
+        height: auto;
+    }
+
+    .nav-hd-group {
+        padding: 0;
+    }
+
+    .nav-hd {
+        display: none;
+    }
+
+    .smartphone-hd {
+        display: block;
+    }
+
+    .nav-title-hd {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-hd-smartphone-icon {
+        display: block;
+        background-color: transparent;
+        border: none;
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-hd-smartphone-icon i {
+        font-size: 20px;
+    }
+
+    .nav-item-hd {
+        text-align: center;
+        margin: 1rem 0;
+        display: block;
+    }
+
+    .home-cards, .page-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Page Media */
+
+    .page-media > .container {
+        display: block;
+    }
+
+    .page-media-foto-filme {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .foto-filme img{
+        width: 75%;
+    }
+
+    .page-media-content-filme {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sobre-filme-title {
+        margin: 2rem 0;
+    }
+
+}
+
+/* Tablet */
+
+@media (min-width: 676px) and (max-width: 875px) {
+    header {
+        height: auto;
+    }
+
+    .container {
+        max-width: 685px;
+    }
+
+    .nav-title-hd {
+        text-align: center;
+    }
+
+    .nav-hd-group {
+        justify-content: center;
+        padding: 1.5rem 0;
+    }
+
+    .navbar-hd {
+        display: block;
+        height: auto;
+        padding: 1.5rem 0;
+    }
+
+    .home-cards, .page-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .title-filme span, .anolancamento-filme span {
+        font-size: 14px;
+    }
+}   
